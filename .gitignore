@@ -4,4 +4,3 @@ test-results/
 blob-report/
 playwright/.cache/
 *.log
-env
