@@ -1,0 +1,17 @@
+{
+  "name": "playwright-automation-capstone",
+  "version": "1.0.0",
+  "description": "Playwright automation capstone project - login + form submission",
+   "type" : "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:login": "npx playwright test tests/login.spec.js",
+    "test:form": "npx playwright test tests/form.spec.js",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "dotenv": "^16.6.1"
+  }
+}
