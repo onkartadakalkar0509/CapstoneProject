@@ -1,10 +1,9 @@
 import { expect } from "@playwright/test";
 import { BasePage } from "../pages/basepage.js"
 
-export class LoginPage extends BasePage{
+export default class Loginpage extends BasePage{
     constructor(page){
         super(page);
-        this.page = page; 
         this.usernameInput = page.locator('#username');
         this.passwordInput = page.locator("#password");
         this.signinbtn = page.locator("#signInBtn");
