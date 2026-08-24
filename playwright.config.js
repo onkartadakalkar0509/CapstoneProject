@@ -21,7 +21,7 @@ export default defineConfig({
     ['html', { outputFolder: 'playwright-report', open: 'never' }]
   ],
   use: {
-    baseURL: process.env.BASE_URL || 'https://rahulshettyacademy.com/loginpagePractise/',
+    baseURL: process.env.BASE_URL || 'https://rahulshettyacademy.com',
     headless: true,
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',

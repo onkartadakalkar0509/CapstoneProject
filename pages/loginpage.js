@@ -25,7 +25,7 @@ export default class Loginpage extends BasePage{
         ])
     }
    async loginToApplication(username, password) {
-        await this.navigate("https://rahulshettyacademy.com/loginpagePractise/");
+        await this.navigate("/loginpagePractise/");
         await this.enterText(this.usernameInput, username);
         await this.enterText(this.passwordInput, password);
         await this.clickElement(this.signinbtn);
