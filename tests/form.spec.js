@@ -10,7 +10,7 @@ test.describe("Form Submission scenario using JSON", () => {
         
         test(`submit form data for ${data.Name}`, async ({ page, formpage }) => {
            const loginpage = new Loginpage(page);
-           await loginpage.loginToApplication(process.env.APP_USERNAME, process.env.APP_PASSWORD);
+           await loginpage.loginToApplication(process.env.LOGIN_USERNAME, process.env.LOGIN_PASSWORD);
             await formpage.navigateToForm(); 
             await formpage.fillFormData(data.Name, data.Email, data.Password);
             await formpage.clickElement(formpage.submitbtn);
