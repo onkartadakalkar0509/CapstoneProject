@@ -12,10 +12,10 @@ export class BasePage {
         async clickElement(locator){
         await locator.click();
     }    
-    async getPageTitle(){
+    async getPageUrl(){
         return this.page.url();
     }
-    async waitForElement(){
+    async waitForElement(locator){
         await locator.waitFor({
             state: "visible"
         })
@@ -23,4 +23,8 @@ export class BasePage {
     async enterText(locator , text ){
         await locator.fill(text)
     }
+
+    // async enterText(locator, name, email, password){
+    //     await locator.fill(name, email, password)
+    // }
 }
