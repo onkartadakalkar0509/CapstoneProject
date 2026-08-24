@@ -3,7 +3,7 @@ import Loginpage  from '../pages/loginpage.js';
 
 export const test = base.extend({
   loginPage: async ({ page }, use) => {
-    await use (Loginpage(page));
+    await use ( new Loginpage(page));
   }
 });
 
