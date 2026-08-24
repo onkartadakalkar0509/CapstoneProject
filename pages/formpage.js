@@ -3,8 +3,6 @@ import { BasePage } from './basepage.js';
 export class Formpage extends BasePage {
     constructor(page) {
         super(page);
-        
-        // Stable locators scoped to the main form to avoid strict mode violations
         this.nameField = page.locator('form input[name="name"]');
         this.emailField = page.locator('form input[name="email"]');
         this.passwordField = page.locator('form input[type="password"]');
