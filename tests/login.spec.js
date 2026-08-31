@@ -15,5 +15,7 @@ test.describe('Login scenario', () => {
      await loginPage.launchApplication();
      await loginPage.loginToApplication(USERNAME, PASSWORD);
      await loginPage.verifyLoginSuccessful();
+     await loginPage.verifyPageTitle();
+     await loginPage.verifyiPhoneXisVisible();
    });
 });
