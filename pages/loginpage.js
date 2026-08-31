@@ -32,4 +32,8 @@ export default class Loginpage extends BasePage{
     async verifyLoginSuccessful(){
        await expect(this.page).toHaveURL(/angularpractice/i);
     }
+
+    async verifyPageTitle(){
+        await expect(this.page).toHaveTitle("ProtoCommerce");
+    }
 }
