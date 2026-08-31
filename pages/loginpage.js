@@ -7,6 +7,7 @@ export default class Loginpage extends BasePage{
         this.usernameInput = page.locator('#username');
         this.passwordInput = page.locator("#password");
         this.signinbtn = page.locator("#signInBtn");
+        this.iphonex = page.getByText('iphone X')
     }  
     
     async launchApplication(){
@@ -33,7 +34,4 @@ export default class Loginpage extends BasePage{
        await expect(this.page).toHaveURL(/angularpractice/i);
     }
 
-    async verifyPageTitle(){
-        await expect(this.page).toHaveTitle("ProtoCommerce");
-    }
 }
