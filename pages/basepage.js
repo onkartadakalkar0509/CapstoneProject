@@ -23,8 +23,4 @@ export class BasePage {
     async enterText(locator , text ){
         await locator.fill(text)
     }
-
-    // async enterText(locator, name, email, password){
-    //     await locator.fill(name, email, password)
-    // }
 }
