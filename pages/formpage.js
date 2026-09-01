@@ -12,7 +12,7 @@ export class Formpage extends BasePage {
     }
 
     async navigateToForm() {
-        await this.category().click();
+        await this.category.click();
     }
 
     async fillFormData(name, email, password) {
