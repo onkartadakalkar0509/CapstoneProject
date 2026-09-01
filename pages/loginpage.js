@@ -7,7 +7,7 @@ export default class Loginpage extends BasePage{
         this.usernameInput = page.locator('#username');
         this.passwordInput = page.locator("#password");
         this.signinbtn = page.locator("#signInBtn");
-        this.iphonex = page.getByText('iphone X')
+        this.iphonex = page.getByText('iphone X');
     }  
     
     async launchApplication(){

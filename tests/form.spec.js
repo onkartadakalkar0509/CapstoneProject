@@ -19,7 +19,7 @@ test.describe("Form Submission scenario using JSON", () => {
     }
 
     
-    test.only("get Page Heading", async({page, formpage}) =>{
+    test("get Page Heading", async({page, formpage}) =>{
     const loginpage = new Loginpage(page);
     await loginpage.loginToApplication(process.env.LOGIN_USERNAME, process.env.LOGIN_PASSWORD);
     await formpage.verifyiphonePresent();
