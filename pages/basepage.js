@@ -23,5 +23,4 @@ export class BasePage {
     async enterText(locator , text ){
         await locator.fill(text)
     }
-
 }

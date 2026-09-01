@@ -25,10 +25,11 @@ export default class Loginpage extends BasePage{
             this.signinbtn.click()
         ])
     }
-    async loginToApplication(username, password){
-        await this.enterUsername(username);
-        await this.enterPassword(password);
-        await this.clickLogin();
+   async loginToApplication(username, password) {
+        await this.navigate("/loginpagePractise/");
+        await this.enterText(this.usernameInput, username);
+        await this.enterText(this.passwordInput, password);
+        await this.clickElement(this.signinbtn);
     }
     async verifyLoginSuccessful(){
        await expect(this.page).toHaveURL(/angularpractice/i);
